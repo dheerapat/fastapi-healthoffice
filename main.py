@@ -16,7 +16,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Welcome to Health Office Management Tools"}
 
 @app.post("/add/")
 async def add_healthcare(id: str = Form(), name: str = Form(), sub: str = Form()):
